@@ -1,0 +1,62 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    android:orientation="vertical">
+
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/login_etEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:hint="@string/text_email"
+            android:backgroundTint="@color/colorGray"
+            android:typeface="serif"
+            android:textStyle="bold"
+            android:imeOptions="actionNext"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/colorBlack" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/login_etPass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:hint="@string/text_pass"
+            android:backgroundTint="@color/colorGray"
+            android:typeface="serif"
+            android:textStyle="bold"
+            android:imeOptions="actionNext"
+            android:inputType="textPassword"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/colorBlack" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <Button
+        android:id="@+id/login_btnLogin"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_marginTop="40dp"
+        android:background="@color/colorGray"
+        android:text="@string/login_button"
+        android:typeface="serif"
+        android:enabled="false"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/colorWhite"
+        android:textStyle="bold" />
+
+
+</LinearLayout>

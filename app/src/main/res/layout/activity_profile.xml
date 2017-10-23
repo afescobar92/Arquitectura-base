@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_weight="200"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/ide_img"
+            android:layout_width="165dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="0.83" />
+
+        <TextView
+            android:id="@+id/username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/user"
+            android:textAlignment="center"
+            android:textSize="4mm"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_weight="0.5"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/likes"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|center"
+            android:drawableTop="@drawable/ic_favorite_black_24dp"
+            android:text="400"
+            android:textAlignment="center"
+            android:layout_margin="20dp"
+            />
+
+        <TextView
+            android:id="@+id/followings"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|center"
+            android:drawableTop="@drawable/ic_directions_run_black_24dp"
+            android:text="400"
+            android:textAlignment="center"
+            android:layout_margin="20dp"
+            />
+
+        <TextView
+            android:id="@+id/followers"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|center"
+            android:drawableTop="@drawable/ic_group_black_24dp"
+            android:text="120"
+            android:textAlignment="center"
+            android:layout_margin="20dp"/>
+
+
+    </LinearLayout>
+        </LinearLayout>
+    </android.support.design.widget.CoordinatorLayout>
+
+</android.support.v4.widget.NestedScrollView>
