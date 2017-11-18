@@ -5,6 +5,9 @@ android {
     buildToolsVersion "25.0.3"
     defaultConfig {
         applicationId "com.cosmo.arquitecturamvpbase"
+        manifestPlaceholders = [onesignal_app_id: "d9d752b2-69cc-4adb-9318-6291f74d401c",
+                                onesignal_google_project_number: "REMOTE"
+                                ]
         minSdkVersion 21
         targetSdkVersion 25
         versionCode 1
@@ -26,14 +29,20 @@ dependencies {
     })
     compile 'com.android.support:appcompat-v7:25.3.1'
     compile 'com.google.code.gson:gson:2.7'
+    compile ('com.squareup.retrofit:converter-simplexml:1.9.0'){
+        exclude group: 'xpp3', module: 'xpp3'
+        exclude group: 'stax', module: 'stax-api'
+        exclude group: 'stax', module: 'stax'
+    }
+
     compile 'com.squareup.retrofit:retrofit:1.9.0'
     compile 'com.squareup.okhttp:okhttp-urlconnection:2.2.0'
     compile 'com.android.support:design:25.3.1'
     compile 'com.android.support.constraint:constraint-layout:1.0.2'
     compile 'com.squareup.picasso:picasso:2.5.2'
-    compile 'com.google.android.gms:play-services:11.0.4'
-    compile 'com.google.android.gms:play-services-maps:11.0.4'
     compile 'com.github.jd-alexander:library:1.1.0'
+    compile 'com.onesignal:OneSignal:[3.6.5,3.99.99]'
+
     testCompile 'junit:junit:4.12'
     testCompile 'org.mockito:mockito-core:1.+'
 }

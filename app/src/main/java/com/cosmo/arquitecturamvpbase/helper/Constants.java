@@ -7,6 +7,7 @@ package com.cosmo.arquitecturamvpbase.helper;
 public class Constants {
 
     public final static String URL_BASE = "https://shoppingproducts.herokuapp.com";
+    public static final String URL_XML_BASE = "https://www.w3schools.com/xml/";
     public final static int TIME_OUT = 6;
     public final static String ITEM_PRODUCT = "Itemproduct";
     public final static String ITEM_CUSTOMER = "Itemcustomer";
@@ -21,4 +22,5 @@ public class Constants {
     public static final String TITLE_EMPTY = "";
     public static final String SHARE_PREFERENCE = "share_preference";
     public static final String USER_OBJECT = "USER_OBJECT";
+
 }

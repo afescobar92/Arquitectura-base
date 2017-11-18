@@ -116,14 +116,14 @@ public class CustomerActivity  extends BaseActivity<DetailCustomerPresenter> imp
     private void createAdapter(final ArrayList<Customer> customerArrayList){
         customerAdapter =  new CustomerAdapter(this, R.id.customer_listView, customerArrayList);
         customerList.setAdapter(customerAdapter);
-        customerList.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+        /*customerList.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 Intent intent = new Intent(CustomerActivity.this, MapsActivity.class);
                 intent.putExtra(Constants.ITEM_CUSTOMER,customerArrayList.get(position));
                 startActivity(intent);
             }
-        });
+        });*/
     }
 
     @Override

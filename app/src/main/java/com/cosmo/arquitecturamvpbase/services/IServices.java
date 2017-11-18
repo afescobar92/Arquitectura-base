@@ -2,6 +2,7 @@ package com.cosmo.arquitecturamvpbase.services;
 
 import com.cosmo.arquitecturamvpbase.model.Customer;
 import com.cosmo.arquitecturamvpbase.model.DeleteResponse;
+import com.cosmo.arquitecturamvpbase.model.Note;
 import com.cosmo.arquitecturamvpbase.model.Product;
 import com.cosmo.arquitecturamvpbase.model.User;
 
@@ -43,4 +44,8 @@ public interface IServices {
 
     @GET("/customers")
     ArrayList<Customer> getCustomers();
+
+    @GET("/note.xml")
+    Note getNotes();
+
 }

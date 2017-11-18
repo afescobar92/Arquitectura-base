@@ -1,9 +1,14 @@
 package com.cosmo.arquitecturamvpbase.presenter;
 
+import android.util.Log;
+
 import com.cosmo.arquitecturamvpbase.R;
 import com.cosmo.arquitecturamvpbase.model.Customer;
+import com.cosmo.arquitecturamvpbase.model.Note;
 import com.cosmo.arquitecturamvpbase.repository.ICustomerRepository;
+import com.cosmo.arquitecturamvpbase.repository.INotesRepository;
 import com.cosmo.arquitecturamvpbase.repository.MapperError;
+import com.cosmo.arquitecturamvpbase.repository.NotesRepository;
 import com.cosmo.arquitecturamvpbase.repository.RepositoryError;
 import com.cosmo.arquitecturamvpbase.views.activities.IDetailCustomerView;
 
@@ -18,9 +23,11 @@ import retrofit.RetrofitError;
 public class DetailCustomerPresenter extends BasePresenter<IDetailCustomerView> {
 
     private ICustomerRepository customerRepository;
+    private INotesRepository notesRepository;
 
     public DetailCustomerPresenter(ICustomerRepository customerRepository) {
         this.customerRepository = customerRepository;
+        this.notesRepository = new NotesRepository();
     }
 
     public void getCustomers(){
@@ -47,6 +54,12 @@ public class DetailCustomerPresenter extends BasePresenter<IDetailCustomerView> 
         try {
             ArrayList<Customer> customerArrayList = this.customerRepository.getCustomers();
             getView().showCustomersList(customerArrayList);
+            Note note = this.notesRepository.getNote();
+
+            Log.i("NOTE To ",note.getTo());
+            Log.i("NOTE From ",note.getFrom());
+            Log.i("NOTE Heading ",note.getHeading());
+            Log.i("NOTE Body ",note.getBody());
 
         } catch (RetrofitError retrofitError) {
 

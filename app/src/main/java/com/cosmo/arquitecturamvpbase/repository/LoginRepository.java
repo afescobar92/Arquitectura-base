@@ -15,7 +15,7 @@ public class LoginRepository implements ILoginRepository {
     private IServices services;
 
     public LoginRepository() {
-        ServicesFactory servicesFactory = new ServicesFactory();
+        ServicesFactory servicesFactory = new ServicesFactory(ServicesFactory.TypeConverter.JSON);
         this.services = (IServices) servicesFactory.getInstance(IServices.class);
     }
 

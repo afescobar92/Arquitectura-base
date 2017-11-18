@@ -19,7 +19,7 @@ public class ProductRepository implements IProductRepository {
 
 
     public ProductRepository() {
-        ServicesFactory servicesFactory = new ServicesFactory();
+        ServicesFactory servicesFactory = new ServicesFactory(ServicesFactory.TypeConverter.JSON);
         services = (IServices) servicesFactory.getInstance(IServices.class);
     }
     @Override

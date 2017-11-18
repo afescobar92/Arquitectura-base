@@ -15,7 +15,7 @@ public class CustomerRepository implements ICustomerRepository {
     private IServices services;
 
     public CustomerRepository() {
-        ServicesFactory servicesFactory = new ServicesFactory();
+        ServicesFactory servicesFactory = new ServicesFactory(ServicesFactory.TypeConverter.JSON);
         services = (IServices) servicesFactory.getInstance(IServices.class);
     }
 
