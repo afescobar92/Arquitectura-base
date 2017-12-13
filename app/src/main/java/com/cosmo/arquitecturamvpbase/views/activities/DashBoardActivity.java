@@ -39,8 +39,8 @@ public class DashBoardActivity extends BaseActivity {
         DashBoardAdapter dashBoardAdapter = new DashBoardAdapter(getSupportFragmentManager());
         dashViewPager.setAdapter(dashBoardAdapter);
         dashTabLayout.setupWithViewPager(dashViewPager);
-        dashTabLayout.setSelectedTabIndicatorColor(ContextCompat.getColor(this,R.color.colorPrimaryDark));
-        dashTabLayout.setTabTextColors(ColorStateList.valueOf(ContextCompat.getColor(this,R.color.colorPrimaryDark)));
+        dashTabLayout.setSelectedTabIndicatorColor(ContextCompat.getColor(this,R.color.colorGray));
+        dashTabLayout.setTabTextColors(ColorStateList.valueOf(ContextCompat.getColor(this,R.color.colorWhite)));
     }
 
 }

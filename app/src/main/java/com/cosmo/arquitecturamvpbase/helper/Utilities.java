@@ -2,10 +2,6 @@ package com.cosmo.arquitecturamvpbase.helper;
 
 import java.util.Calendar;
 
-/**
- * Created by user on 22/10/2017.
- */
-
 public class Utilities {
 
 

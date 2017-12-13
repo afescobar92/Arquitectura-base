@@ -20,8 +20,9 @@
         <activity android:name=".views.activities.CreateProductActivity" />
         <activity android:name=".views.activities.DashBoardActivity" />
         <activity android:name=".views.activities.CreateCustomerActivity"></activity>
-        <activity android:name=".views.activities.LoginActivity"></activity>
-        <activity android:name=".views.activities.CustomerActivity">
+        <activity android:name=".views.activities.CustomerActivity"></activity>
+        <activity android:name=".views.activities.LoginActivity"
+                  android:configChanges="keyboardHidden|orientation|screenSize">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
